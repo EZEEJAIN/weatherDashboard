@@ -4,7 +4,7 @@ import { GrLocation } from "react-icons/gr";
 import { LuWind } from "react-icons/lu";
 import { MdOutlineWaterDrop } from "react-icons/md";
 import { WiWindy } from "react-icons/wi";
-import { PiWaveSine } from "react-icons/pi";
+import { TbTemperature } from "react-icons/tb";
 
 const TempCard = ({
   showPopular,
@@ -19,14 +19,14 @@ const TempCard = ({
   windSpeed,
   dayTemprature,
 }) => {
-  console.log("lastUpdated", lastUpdated);
+ 
   const time = ["Morning", "Afternoon", "Evening", "Night"];
   return (
     <div
-      className={`box-content ${color} md:flex justify-between items-center md:space-x-5 lg:space-x-10 rounded-md px-7 py-5 lg:mr-10 space-y-5 md:space-y-0 w-auto`}
+      className={`box-content ${color} md:flex justify-between items-center md:space-x-5 xl:space-x-10 rounded-md px-7 py-5 lg:mr-10 space-y-5 md:space-y-0`}
     >
       <div className="flex-col justify-start items-center space-y-5">
-        <div className="flex justify-between items-center w-full space-x-10 md:space-x-24 lg:space-x-80">
+        <div className="flex justify-between items-center w-full space-x-10 md:space-x-24 lg:space-x-6">
           <div div className="flex justify-center items-center space-x-3 text-blue-900/[0.8]">
             <GrLocation className="text-xl" />
             <p className="text-xl font-semibold whitespace-nowrap">
@@ -64,7 +64,7 @@ const TempCard = ({
         </div>
       </div>
       <div
-        className={`box-content ${incolor} flex-col flex justify-start items-start space-y-7 rounded-md p-7 h-48 md:w-[35%]`}
+        className={`box-content ${incolor} flex-col flex justify-start items-start space-y-7 rounded-md p-7 h-48 md:w-[35%] overflow-scroll no-scrollbar`}
       >
         <div>
           <p className="text-blue-900/[0.8] font-medium text-xl tracking-wider">
@@ -72,7 +72,7 @@ const TempCard = ({
           </p>
         </div>
         <div>
-          <PiWaveSine className="text-7xl text-blue-900/[0.8]" />
+          <TbTemperature className="text-4xl text-blue-900/[0.8] mt-7" />
         </div>
         <div className="flex justify-start items-start">
           <div className="flex justify-between items-center space-x-5 lg:space-x-10 w-full ">

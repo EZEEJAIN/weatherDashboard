@@ -106,7 +106,7 @@ const Navbar = ({
               {locationName.length > 0
                 ? cities.map((city, index) => (
                     <p
-                      className="px-3 py-2 bg-white hover:cursor-pointer hover:bg-gray-100 duration-300 text-sm border-b-[1px] border-gray-500"
+                      className="px-3 py-2 bg-white hover:cursor-pointer hover:bg-gray-100 duration-300 text-sm "
                       onClick={() => {
                         setShowPopular(false);
                         setLocationName(city.name);
@@ -117,7 +117,7 @@ const Navbar = ({
                   ))
                 : popularCities.map((city, index) => (
                     <p
-                      className="p-3 bg-white hover:cursor-pointer hover:bg-gray-100 duration-300 text-sm border-b-[1px] border-gray-500"
+                      className="p-3 bg-white hover:cursor-pointer hover:bg-gray-100 duration-300 text-sm "
                       onClick={() => {
                         setShowPopular(false);
                         setLocationName(city.name);

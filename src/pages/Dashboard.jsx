@@ -164,8 +164,8 @@ const Dashboard = () => {
   ];
 
   return (
-    <div className="lg:flex justify-between items-start px-3 lg:px-10 py-2 w-full">
-      <div className="flex-col justify-start items-start space-y-3 lg:border-r">
+    <div className="lg:flex justify-start items-start px-3 lg:px-10 py-2 w-full">
+      <div className="flex-col justify-start items-start space-y-3 lg:border-r lg:w-[75%] xl:w-full">
         <Navbar
           showPopular={showPopular}
           setShowPopular={setShowPopular}
