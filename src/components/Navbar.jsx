@@ -106,7 +106,7 @@ const Navbar = ({
               {locationName.length > 0
                 ? cities.map((city, index) => (
                     <p
-                      className="px-3 py-2 bg-white hover:cursor-pointer hover:bg-gray-100 duration-300 text-sm"
+                      className="px-3 py-2 bg-white hover:cursor-pointer hover:bg-gray-100 duration-300 text-sm border-b-[1px] border-gray-500"
                       onClick={() => {
                         setShowPopular(false);
                         setLocationName(city.name);
@@ -117,7 +117,7 @@ const Navbar = ({
                   ))
                 : popularCities.map((city, index) => (
                     <p
-                      className="p-3 bg-white hover:cursor-pointer hover:bg-gray-100 duration-300 text-sm"
+                      className="p-3 bg-white hover:cursor-pointer hover:bg-gray-100 duration-300 text-sm border-b-[1px] border-gray-500"
                       onClick={() => {
                         setShowPopular(false);
                         setLocationName(city.name);
@@ -129,7 +129,7 @@ const Navbar = ({
             </div>
           )}
         </div>
-        <div className="flex justify-start items-center space-x-2 md:space-x-5">
+        <div className="hidden md:flex justify-start items-center space-x-2 md:space-x-5">
           <CgNotifications className="text-2xl text-gray-700 cursor-pointer duration-300" />
           <div class="flex -space-x-1 overflow-hidden cursor-pointer duration-300">
             <img

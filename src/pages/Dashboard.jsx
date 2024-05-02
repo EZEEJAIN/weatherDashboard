@@ -164,8 +164,8 @@ const Dashboard = () => {
   ];
 
   return (
-    <div className="flex justify-between items-start px-3 md:px-10 py-2 w-full">
-      <div className="flex-col justify-start items-start w-full space-y-3 md:border-r">
+    <div className="lg:flex justify-between items-start px-3 lg:px-10 py-2 w-full">
+      <div className="flex-col justify-start items-start space-y-3 lg:border-r">
         <Navbar
           showPopular={showPopular}
           setShowPopular={setShowPopular}
@@ -199,7 +199,7 @@ const Dashboard = () => {
             }
           />
         ))}
-        <div className="grid grid-cols-2 xl:grid-cols-3 gap-y-10 pt-5 w-">
+        <div className="grid grid-cols-2 xl:grid-cols-3 gap-y-5 gap-x-5 pt-5 lg:pr-10">
           {detailItems.map((elem, index) => (
             <Details
               key={index}

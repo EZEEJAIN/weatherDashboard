@@ -23,17 +23,17 @@ const TempCard = ({
   const time = ["Morning", "Afternoon", "Evening", "Night"];
   return (
     <div
-      className={`box-content ${color} md:flex justify-between items-center md:space-x-10 2xl:space-x-60 rounded-md px-7 py-5 mr-10 space-y-5 md:space-y-0 w-auto`}
+      className={`box-content ${color} md:flex justify-between items-center md:space-x-5 lg:space-x-10 rounded-md px-7 py-5 lg:mr-10 space-y-5 md:space-y-0 w-auto`}
     >
-      <div className="flex-col justify-start items-center space-y-5 md:w-[65%] mx-auto">
-        <div className="flex justify-between items-center">
-          <div className="flex justify-center items-center space-x-3 text-blue-900/[0.8]">
+      <div className="flex-col justify-start items-center space-y-5">
+        <div className="flex justify-between items-center w-full space-x-10 md:space-x-24 lg:space-x-80">
+          <div div className="flex justify-center items-center space-x-3 text-blue-900/[0.8]">
             <GrLocation className="text-xl" />
             <p className="text-xl font-semibold whitespace-nowrap">
               {locationName && !showPopular ? locationName : "Loading..."}
             </p>
           </div>
-          <div className="flex justify-center items-center space-x-3 text-blue-900/[0.8] whitespace-nowrap ">
+          <div className="flex justify-center items-center space-x-3 text-blue-900/[0.8] whitespace-nowrap text-sm sm:text-base">
             <p>Last Updated {moment(lastUpdated).format("LTS")}</p>
           </div>
         </div>
@@ -75,7 +75,7 @@ const TempCard = ({
           <PiWaveSine className="text-7xl text-blue-900/[0.8]" />
         </div>
         <div className="flex justify-start items-start">
-          <div className="flex justify-between items-center space-x-10 w-full">
+          <div className="flex justify-between items-center space-x-5 lg:space-x-10 w-full ">
             {time.map((elem, index) => (
               <div
                 key={index}

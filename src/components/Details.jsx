@@ -3,7 +3,7 @@ import React from "react";
 const Details = ({ color, detail, detailName, unit, image }) => {
   return (
     <div
-      className={`box-content ${color} flex justify-between items-center space-x-4 rounded-md p-5 w-auto mr-10`}
+      className={`box-content ${color} flex justify-between items-center space-x-4 rounded-md p-5 w-auto`}
     >
       <div className="flex-col flex justify-start items-start space-y-2 text-start">
         <p className="text-black font-medium text-base md:text-xl text-start">{detailName}</p>

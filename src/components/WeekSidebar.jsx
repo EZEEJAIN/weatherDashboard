@@ -3,9 +3,9 @@ import React from "react";
 
 const WeekSidebar = ({ forcastInfo }) => {
   return (
-    <div className="text-xl text-gray-500 w-[500px] py-4 font-medium pl-10 space-y-10 pt-7">
-      <p className="text-xl text-black font-medium"> Week Forecast</p>
-      <div className="">
+    <div className="text-xl text-gray-500 lg:w-[500px] py-4 font-medium pl-4 lg:pl-10 space-y-10 pt-7">
+      <p className="text-xl text-black font-medium">Week Forecast</p>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:flex lg:flex-col">
         {forcastInfo &&
           forcastInfo.length > 0 &&
           forcastInfo.slice(1).map((days, index) => (
